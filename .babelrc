@@ -1,0 +1,21 @@
+{
+  "presets": ["next/babel", "minify"],
+  "plugins": [
+    [
+      "styled-components",
+      {
+        "minify": true,
+        "pure": true,
+        "ssr": true,
+        "displayName": true,
+        "preprocess": true
+      }
+    ],
+    [
+      "module-resolver",
+      {
+        "root": ["./"]
+      }
+    ]
+  ]
+}
