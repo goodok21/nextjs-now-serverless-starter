@@ -1,0 +1,7 @@
+{
+  "name": "nextjs-now-serverless-starter",
+  "version": 2,
+  "env": {
+    "NEXT_PUBLIC_GRAPHCOOL_API": "https://api.graph.cool/simple/v1/cixmkt2ul01q00122mksg82pn"
+  }
+}
