@@ -3,7 +3,7 @@ export { useLayoutEffect, useEffect, useState }
 export const useIsomorphicLayoutEffect =
   typeof window !== 'undefined' ? useLayoutEffect : useEffect
 
-export { default as styled } from 'styled-components'
+// export { default as styled } from 'styled-components'
 
 export { default as cuid } from 'cuid'
 export { default as moment } from 'moment'

@@ -1,9 +1,9 @@
 import FontFaceObserver from 'fontfaceobserver'
-import { ThemeProvider } from 'styled-components'
+import { styled, ThemeProvider } from 'styled-components'
 import theme from './theme'
 import { Normalize } from 'styled-normalize'
 import GlobalStyle from './globalStyle'
-import { styled, useState, useIsomorphicLayoutEffect } from 'utils'
+import { useState, useIsomorphicLayoutEffect } from 'utils'
 
 const Wrapper = styled.div`
   max-width: 40rem;
