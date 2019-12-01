@@ -21,7 +21,7 @@ const GlobalStyle = createGlobalStyle`
         url('/fonts/Gilroy-Bold.woff2') format('woff2'),
         url('/fonts/Gilroy-Bold.woff') format('woff'),
         url('/fonts/Gilroy-Bold.ttf') format('truetype');
-    font-weight: bold;
+    font-weight: 700;
     font-style: normal;
   }
 
@@ -45,7 +45,7 @@ const GlobalStyle = createGlobalStyle`
         url('/fonts/Gilroy-BoldItalic.woff2') format('woff2'),
         url('/fonts/Gilroy-BoldItalic.woff') format('woff'),
         url('/fonts/Gilroy-BoldItalic.ttf') format('truetype');
-    font-weight: bold;
+    font-weight: 700;
     font-style: italic;
   }
 

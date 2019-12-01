@@ -13,17 +13,18 @@ const Wrapper = styled.div`
 const Layout = ({ children }) => {
   const [isFontLoaded, setIsFontLoaded] = useState(false)
   useIsomorphicLayoutEffect(() => {
-    var font = new FontFaceObserver('Gilroy')
-    font
-      .load()
-      .then(() => {
-        if (!isFontLoaded) {
-          setIsFontLoaded(true)
-        }
-      })
-      .catch(e => {
-        console.warn(e)
-      })
+    if (isFontLoaded) return
+    var normal = new FontFaceObserver('Gilroy')
+    var italic = new FontFaceObserver('Gilroy', {
+      style: 'italic'
+    })
+    var bold = new FontFaceObserver('Gilroy', {
+      style: 'bold'
+    })
+
+    Promise.all([normal.load(), italic.load(), bold.load()]).then(() => {
+      setIsFontLoaded(true)
+    })
   })
 
   return (
